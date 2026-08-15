@@ -1,7 +1,7 @@
 // src/components/StatsBadge.tsx
 interface StatsBadgeProps {
   label: string;
-  value: number;
+  value: number | string;
   color?: string;
 }
 
