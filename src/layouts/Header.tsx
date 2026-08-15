@@ -30,6 +30,7 @@ function Header({ user, onLogout }: HeaderProps) {
         {[
           { to: '/dashboard', label: 'Dashboard' },
           { to: '/empleados', label: 'Empleados' },
+          { to: '/departamento', label: 'Departamentos' },
         ].map(item => (
           <Link
             key={item.to}

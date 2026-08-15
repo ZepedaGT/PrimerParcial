@@ -37,6 +37,14 @@ function DashboardPage() {
           Ver empleados →
         </Link>
       </div>
+       <div style={{ display: 'flex', gap: '12px' }}>
+        <Link to="/departamento" style={{
+          padding: '10px 20px', background: '#1e40af', color: 'white',
+          borderRadius: '6px', textDecoration: 'none', fontSize: '14px'
+        }}>
+          Ver departamnetos →
+        </Link>
+      </div>
     </div>
   );
 }

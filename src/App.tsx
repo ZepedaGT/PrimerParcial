@@ -5,9 +5,9 @@ import Header from './layouts/Header';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 import EmployeesPage from './pages/EmployeesPage';
+import DepartamentoPage from './pages/DepartamentoPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import type { User } from './types';
-import DepartamentoPage from './pages/DepartamentoPage'
 
 
 // Layout con Header para páginas autenticadas
@@ -48,16 +48,20 @@ function App() {
             </AppLayout>
           </ProtectedRoute>
         } />
-        <Route path="/departamento" element={
-          <AppLayout>
-            <DepartamentoPage
-          </AppLayout>
-        }
+     
 
         <Route path="/empleados" element={
           <ProtectedRoute>
             <AppLayout>
               <EmployeesPage />
+            </AppLayout>
+          </ProtectedRoute>
+        } />
+
+        <Route path="/departamento" element={
+          <ProtectedRoute>
+            <AppLayout>
+              <DepartamentoPage />
             </AppLayout>
           </ProtectedRoute>
         } />
